@@ -1,0 +1,9 @@
+.movie-container {
+    display: grid;
+    grid-gap: 10px;
+    /* 3 columns and infinite rows */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+
+}

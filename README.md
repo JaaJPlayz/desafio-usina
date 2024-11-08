@@ -1,52 +1,140 @@
-# 🎥 Biblioteca de Filmes com Recomendações e Avaliações
+---
 
-## Descrição do Projeto
+# 📚 **Biblioteca de Filmes com Recomendações e Avaliações** 🎬
 
-Este é um desafio de desenvolvimento onde você criará uma **Biblioteca de Filmes**. O objetivo é que usuários possam adicionar filmes que já assistiram, avaliar esses filmes e receber recomendações baseadas nas avaliações de outros usuários. O projeto combina funcionalidades de CRUD com recomendações, sendo ideal para demonstrar habilidades em back-end, front-end e banco de dados.
+Este é um projeto de desafio técnico onde foi criada uma aplicação de **Biblioteca de Filmes** com funcionalidades de CRUD, avaliações de filmes, recomendações personalizadas e autenticação de usuários. A aplicação foi construída utilizando as tecnologias **Node.js**, **React**, **PostgreSQL** e **Docker**.
 
-## Funcionalidades
+---
 
-- **CRUD de Filmes**: Adicionar, editar, listar e remover filmes na biblioteca.
-- **Avaliações de Filmes**: Usuários podem avaliar filmes de 1 a 5 estrelas.
-- **Recomendações**: Recomendações baseadas em avaliações semelhantes feitas por outros usuários.
-- **Autenticação de Usuários**: Usuários devem se cadastrar e fazer login para acessar e avaliar os filmes.
-- **Pesquisa e Filtragem**: Usuários podem pesquisar por filmes específicos e filtrar por gênero, ano, etc.
+## 🚀 **Funcionalidades**
 
-## Tecnologias Recomendadas
+1. **Cadastro e Login de Usuários** 📝: Autenticação com JWT, permitindo que usuários se cadastrem, façam login e acessem a plataforma.
+2. **CRUD de Filmes** 🎥: Os usuários podem adicionar, editar, listar e remover filmes da biblioteca.
+3. **Avaliações de Filmes** ⭐: Usuários podem avaliar filmes de 1 a 5 estrelas, com a possibilidade de adicionar um comentário opcional.
+4. **Recomendações** 🎯: O sistema sugere filmes com base nas avaliações de outros usuários que possuem perfis semelhantes.
+5. **Pesquisa e Filtragem de Filmes** 🔍: Filtros para gênero, ano de lançamento, e outros critérios.
+6. **Interface de Usuário** 💻: Interface interativa e intuitiva, construída com **React** e **CSS Modules**.
 
-- **Backend**: Node.js com Express
-- **Banco de Dados**: PostgreSQL
-- **Frontend**: React ou Angular
-- **Autenticação**: JWT para segurança
+---
 
-## Requisitos
+## 🛠️ **Tecnologias Utilizadas**
 
-1. **Cadastro e Login de Usuários** com autenticação por JWT.
-2. **CRUD de Filmes** com os campos:
-   - Título do filme
-   - Descrição
-   - Gênero
-   - Ano de lançamento
-   - Duração
-3. **CRUD de Avaliações** com os campos:
-   - Nota de 1 a 5 estrelas
-   - Comentário (opcional)
-4. **Recomendações**: Listar filmes que foram bem avaliados por outros usuários com perfis de avaliação semelhantes.
-5. **Pesquisa e Filtragem**: Filtros para gêneros, ano e outros critérios.
+- **Frontend**:
+  - React ⚛️
+  - CSS Modules 🎨
+  - TypeScript 🔤
+- **Backend**:
+  - Node.js 🖧
+  - Express 🚦
+  - TypeScript 🔤
+  - JWT (JSON Web Tokens) 🔑
+  - bcryptjs (para hash de senhas) 🔒
+  - CORS 🌐
+  - PostgreSQL 🗄️
+- **Ferramentas de Desenvolvimento**:
+  - Docker 🐳
+  - Docker Compose ⚙️
 
-## Critérios de Avaliação
+---
 
-- **Funcionalidade Completa**: Todas as funcionalidades devem estar presentes e funcionando conforme descrito.
-- **Organização do Código**: Separação clara entre camadas (controllers, models, serviços).
-- **Qualidade do Código**: Código limpo, bem documentado e fácil de entender.
-- **Documentação**: O `README.md` deve incluir uma explicação clara de como rodar o projeto.
-- **Usabilidade e Design**: Interface intuitiva e agradável para o usuário.
+## 🏗️ **Arquitetura do Projeto**
 
-## Instruções para Configuração
+O projeto está dividido em duas partes principais: **Backend** e **Frontend**. A comunicação entre o cliente e o servidor é feita via **API RESTful**.
 
-1. Clone este repositório:
+### Estrutura de Diretórios
+
+```
+/backend
+  /src
+    /controllers      # Lógica de controle das requisições HTTP
+    /models           # Definição das tabelas e interações com o banco
+    /services         # Funções de negócio e lógica principal
+    /routes           # Roteamento de URLs
+    /utils            # Utilitários, como funções auxiliares
+  .env                # Variáveis de ambiente do backend
+  Dockerfile          # Arquivo de configuração do Docker para o backend
+  tsconfig.json       # Configuração do TypeScript
+  package.json        # Dependências e scripts do backend
+
+/frontend
+  /src
+    /components       # Componentes reutilizáveis de UI
+    /pages            # Páginas da aplicação (Home, Login, Cadastro, etc.)
+    /services         # Funções para consumir a API
+    /styles           # Estilos utilizando CSS Modules
+    App.tsx           # Componente raiz da aplicação
+  Dockerfile          # Arquivo de configuração do Docker para o frontend
+  tsconfig.json       # Configuração do TypeScript
+  package.json        # Dependências e scripts do frontend
+
+/docker-compose.yml   # Configuração do Docker Compose para orquestração do ambiente
+README.md             # Documentação do projeto
+```
+
+---
+
+## 🏃 **Como Rodar o Projeto**
+
+### 🔧 **Pré-requisitos**
+
+- **Node.js** v16 ou superior
+- **Docker** e **Docker Compose** instalados
+- **PostgreSQL** (configurado via Docker)
+
+### 📜 **Passo a Passo**
+
+1. **Clonar o Repositório** 
+
+   Clone o repositório para sua máquina local:
+
    ```bash
-   git clone https://github.com/hallslima/desafio-usina.git
-   cd desafio-usina
+   git clone git@github.com:JaaJPlayz/desafio-usina-fs.git biblioteca-filmes
+   cd biblioteca-filmes
+   ```
 
-2. Para entregar o desafio, mande um pull request com uma branch no seu nome.
+2. **Instalar as dependências**
+
+   ```bash
+   npm install
+   npm run install:all
+   ```
+
+4. **Rodando com Docker** 🐳
+
+   O projeto já está configurado para rodar com **Docker** e **Docker Compose**. Execute o seguinte comando para subir o ambiente completo:
+
+   ```bash
+   npm run run:all
+   ```
+
+   Esse comando irá:
+   - Subir o banco de dados PostgreSQL 🗄️.
+   - Rodar o servidor backend na porta `3001` 🚀.
+   - Rodar o frontend na porta `5173` 🌍.
+
+5. **Acessando a Aplicação**
+
+   Após o ambiente estar rodando, acesse a aplicação no navegador:
+
+   - **Frontend (UI)**: [http://localhost:3000](http://localhost:5173) 💻
+   - **Backend (API)**: [http://localhost:5000](http://localhost:3001) 🖧
+
+---
+
+## 📡 **Endpoints da API**
+
+Aqui estão alguns dos principais endpoints que a API oferece:
+
+### **Usuários**
+
+- `POST /register` 📝: Registra um novo usuário.
+- `POST /login` 🔑: Faz login e retorna um token JWT.
+
+### **Filmes**
+
+- `GET /movies` 🎥: Lista todos os filmes.
+- `POST /movies` ➕: Adiciona um novo filme.
+- `PUT /movies/:id` ✏️: Atualiza as informações de um filme.
+- `DELETE /movies/:id` 🗑️: Remove um filme da biblioteca.
+
+---

@@ -1,0 +1,73 @@
+.register-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    height: 100vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fa6969;
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 500px;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 40px;
+}
+
+.register-form input {
+    width: 95%;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 18px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.register-form button {
+    width: 99.4%;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+.go-register-button,
+.go-login-button {
+    width: 500px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.025);
+    transition: 0.3s;
+}

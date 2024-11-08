@@ -1,0 +1,62 @@
+.create-movie-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    height: 60vh;
+    width: auto;
+    margin-top: 100px;
+}
+
+.create-movie-form-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fa6969;
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 500px;
+    height: 600px;
+    /* Shadow */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* Transition */
+    transition: 0.3s;
+}
+
+.create-movie-form-container form input {
+    width: calc(90% - 15px);
+    font-size: 20px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.create-movie-form-container form button {
+    width: 91%;
+    height: auto;
+    padding: 10px 0px;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(247, 140, 140);
+    color: black;
+    margin-top: 10px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.create-movie-form-container form textarea {
+    width: calc(90% - 15px);
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 10px;
+}

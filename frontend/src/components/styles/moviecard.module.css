@@ -1,0 +1,102 @@
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 109, 109);
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 500px;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.movie-card:hover {
+    transform: scale(1.025);
+}
+
+.movie-card-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    min-width: 85%;
+    background-color: rgb(247, 140, 140);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+}
+
+.movie-card-comment {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.movie-card-description {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    min-width: 85%;
+    background-color: rgb(247, 140, 140);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+}
+
+.movie-edit-button {
+    background-color: rgb(247, 140, 140);
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    transition: 0.3s;
+    min-width: 100px;
+    cursor: pointer;
+    border: 1px solid #111;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.movie-delete-button {
+    background-color: rgb(247, 140, 140);
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    transition: 0.3s;
+    min-width: 100px;
+    cursor: pointer;
+    border: 1px solid #111;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.movie-edit-button:hover {
+    transform: scale(1.125);
+}
+
+.movie-delete-button:hover {
+    transform: scale(1.125);
+}
+
+i {
+    margin: 0px 10px;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "second-attempt",
+  "version": "1.0.0",
+  "description": "## Descrição do Projeto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run:all": "cd backend && npm run docker:up && cd ../frontend && npm run dev -- --open",
+    "stop:all": "cd backend && npm run docker:down",
+    "install:all": "cd backend && npm i && cd ../frontend && npm i && cd .."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hallslima/desafio-usina.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hallslima/desafio-usina/issues"
+  },
+  "homepage": "https://github.com/hallslima/desafio-usina#readme"
+}
